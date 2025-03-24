@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 0, 0, 0.5);
+    margin: 10px;
+    color: white;
+    padding: 10px;
+}
+
+#uno{
+    border-width: thin;
+    border-style: dotted;
+    border-color: aqua;
+}
+
+#dos{
+    border-width: medium;
+    border-style: dotted;
+    border-color: aqua;
+}
+
+#tre{
+    border-width:thick;
+    border-style:dotted;
+    border-color:aqua red pink;
+}
+#cua{
+    border:thin dotted black;
+}
+#a{
+    border: 10px hidden  rgb(232, 7, 7);
+}
+#b{
+    border:10px dotted  rgb(225, 0, 255);
+}
+#c{
+    border:10px dashed  rgb(153, 248, 0);
+}
+#d{
+    border:10px solid  rgb(0, 208, 83);
+}
+#e{
+    border:10px double  rgb(252, 160, 2);
+}
+#f{
+    border:10px groove  rgb(3, 176, 244);
+}
+#g{
+    border:10px ridge  rgb(1, 32, 75);
+}
+#h{
+    border:10px inset  rgb(107, 3, 52);
+}
+#i{
+    border:10px outset  rgb(174, 0, 87);
+}
+#j{
+    border-top: 10px dashed red;
+    border-bottom: 10px solid black;
+    border-left: 10px dotted blue;
+    border-right: 10px double rgb(136, 7, 136); 
+}
+#jk{
+    font-family: arial, sans-serif;
+    font-size: 1rem;
+  
+    padding: 1rem 2rem;
+    background: none;
+    color: #000;
+  
+    border-image-source: linear-gradient(indigo, purple, hotpink);
+    border-image-slice: 1 1 1 1;
+    border-image-width:0.25rem;
+}
+#cajita16 {
+    --timing: linear(0, 0.3, 0.75, 1);
+  
+    font-family: Jost, sans-serif;
+    font-size: 0.5rem;
+  
+    padding: 1rem 2rem;
+    background: none;
+    color: #000;
+  
+    border-image-source: conic-gradient(from var(--a), indigo, purple, hotpink);
+    border-image-slice: 1 1 1 1;
+    border-image-width: 0.25rem;
+  
+    animation: move 1s infinite var(--timing);
+  
+  
+  }
+  
+  @keyframes move {
+    from { --a: 0deg; }
+    to { --a: 360deg; }
+  }
+  
+  @property --a {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value:0deg;
+}

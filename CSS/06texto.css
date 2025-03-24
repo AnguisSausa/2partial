@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Mine';
+    src: url('font/Minercraftory.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+span{
+    font-family: "Arial";
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+}
+.t1{
+    font-family:"Cooper Black";
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 100px;
+}
+.t2{
+    font-family: "Pink Line";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 100px;
+    /*ya quedo*/
+}
+.t3{
+    font-family: "Forte";
+    font-size: 60px;
+    font-style: inherit;
+    font-weight: 500;
+}
+.t4{
+    font-family: "Gigi";
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 200;
+}
+.t5{
+    font-family: "Jokerman";
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
+}
+.p1{
+    text-decoration:2px double underline violet;
+}
+.p2{
+    text-decoration:7px dashed overline red;
+}
+.p3{
+    text-decoration: 5px dotted line-through greenyellow;
+}
+.p4{
+    text-shadow: 0 0 10px ;
+}
+.p5{
+font-family: "Mine";
+}
+.p6{
+    letter-spacing: 10px;
+
+}	
+.p7{
+    line-height: 300px;
+}
+.p8{
+    text-indent: 50px;
+}
+.p9{
+    word-spacing: 20px;
+    color: rgb(255, 55, 218);
+    /*espacio entre palabras */
+}
+
+.p10{
+    white-space: pre-line;
+}
+.p11{
+    text-align: center;
+}
+.p15{
+    tab-size: 10;
+}
+.p19{
+    text-align: center;
+}

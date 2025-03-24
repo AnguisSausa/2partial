@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+div{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 0, 0, 0.5);
+    margin: 10px;
+    color: white;
+    padding: 10px;
+}
+.ingles{
+    background: blueviolet;
+   
+}
+.rgb{
+    background: rgb(37 168 234);
+   
+}
+.rgb2{
+    background: rgb(3 6 165);
+   
+}
+.rgb3{
+    background:rgba(96 212 8 0.5);
+   
+}
+.exa{
+   background: #ff0090;
+}
+.exa3{
+   background: #DD6;
+}
+ .gradi{
+    background: rgb(255,154,42);
+    background: linear-gradient(90deg, rgba(255,154,42,1) 44%, rgba(255,241,60,1) 56%);
+ }
+ .deg{
+    background: rgb(64,93,177);
+    background: linear-gradient(0deg, rgba(64,93,177,1) 21%, rgba(45,253,214,1) 61%);
+
+ }
+ .radial{
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+ }
+ .hck{
+    background: rgb(255,204,0);
+    background: linear-gradient(45deg, rgba(255,204,0,1) 0%, rgba(255,153,0,1) 100%);
+ }
+ .hsl{
+        color: hsl(300, 80%, 45%);
+ }
+ .mix{
+    color: #FF5733;
+
+ }
+ .relativo{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(154, 154, 48);
+    color: rgb(243, 5, 5);
+ }
+ .hwb{
+    color: hwb(124 0% 6%);
+ }

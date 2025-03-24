@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: violet;
+    border: 2px solid yellow;
+    margin: 10px;
+    padding: 5px;
+    color: blue;
+}
+.a{
+    position: static;
+    top: 200px;
+    left: 200px;
+    background: rgb(114, 4, 114);
+  
+}
+.e{
+    position: relative;
+    top: 100px;
+    left: 250px;
+    background: rgb(114, 4, 41);
+}
+.i{
+    position: absolute;
+    top: 100px;
+    left: 250px;
+
+    background: rgb(37, 109, 43);
+}
+.f{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200;
+    height: 200;
+    background: rgb(224, 197, 62);
+
+}
+.g{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200;
+    height: 200;
+    background: rgb(224, 197, 62);
+    z-index: 5;
+    opacity: 0.5;
+    margin: 0px;
+    padding: 0px;
+
+}
+.h{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200;
+    height: 200;
+    background: rgb(224, 197, 62);
+
+}
+.j{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 200;
+    height: 200;
+    background: rgb(184, 155, 12);
+
+}
+.fijo{
+    position: fixed;
+    top: 150px;
+    right: 150px;
+    background: pink;
+}
+.pega{
+    position: sticky;
+    top: 200px;
+    right: 100px;
+    background: rgb(242, 119, 12);
+}
+.a1{
+    background: green;
+    top: 100px;
+    left: 100px;
+    position: static;
+}
+.c1{
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    background: rgb(91, 55, 55);
+    opacity: 0.5;
+}
+.c2{
+    position: absolute;
+    top: 350px;
+    left: 120px;
+    background: rgb(107, 69, 102);
+    opacity: 0.5;
+}
+.c3{
+    position: absolute;
+    top: 300px;
+    left: 140px;
+    background: rgb(72, 49, 95);
+    opacity: 0.5;
+}
+.c4{
+    position: absolute;
+    top: 250px;
+    left: 160px;
+    background: rgb(43, 90, 80);
+    opacity: 0.5;
+}

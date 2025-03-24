@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+height: 100vh;
+background: linear-gradient(0deg, rgba(64,93,177,1) 21%, rgba(45,253,214,1) 61%);
+}
+.login{
+  width: 400px;
+  height: 550px;
+  background: white;
+box-shadow: 0 0 10px black;
+border-radius: 20px;
+padding: 10px;
+}
+
+.fondo{
+    width: 400px;
+    position: relative;
+    top: -110px;
+    left: -10px;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: 2px solid blue;
+}
+.user{
+    position: relative;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    top: -150px;
+    display: block;
+    border: 2px solid blue;
+    border-radius:100%;
+}
+label{
+    font-family: "arial black";
+    font-weight: bold;
+    margin: 10px;
+    display: block;
+
+}
+button{
+    width: 50px;
+    height: 40px;
+    background: blue;
+    color: white;
+margin: 10px auto;
+padding: 5px;
+border-radius: 5%;
+display: block;
+border: none;
+}
+button:hover{
+    width: 50px;
+    height: 40px;
+    background: black;
+    color: rgb(237, 9, 169);
+margin: 10px auto;
+padding: 5px;
+border-radius: 5%;
+display: block;
+border: none;
+}
+input{
+    border-radius: 5px;
+    padding: 3px;
+    border: 2px solid rgb(17, 18, 17);
+    height: 40px;
+    margin-top: 0px;
+}
+input:hover{
+    border-radius: 5px;
+    padding: 3px;
+    border: 2px solid rgb(17, 18, 17);
+    height: 40px;
+    margin-top: 0px;
+    background: rgb(202, 144, 234);
+}
+a{
+    text-decoration: none;
+    display: block;
+    margin: auto;
+}
+form{
+    position: relative;
+    top: -110px;
+    
+}

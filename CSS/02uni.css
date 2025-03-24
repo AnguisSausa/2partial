@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    text-align: center;
+
+}
+img{
+border: 3px solid black;
+}
+.uno{
+    width: 100px;
+    height: 200px;
+border: 3px solid rgb(255, 12, 12);
+
+}
+.dos{
+    width: 10cm;
+    height: 15cm;
+border: 3px solid rgb(4, 129, 255);
+
+}
+.tres{
+    width: 50mm;
+    height: 100mm;
+border: 3px solid rgb(255, 32, 255);
+
+}
+.for{
+    width: 100q;
+    height: 100q;
+border: 3px solid rgb(85, 201, 97);
+
+}
+.five{
+    width: 50pt;
+    height: 50pt;
+border: 3px solid rgb(0, 215, 253);
+
+}
+.six{
+    width: 40in;
+    height: 40in;
+border: 3px solid rgb(255, 174, 0);
+
+}
+.fix{
+    width: 50pc;
+    height: 70pc;
+border: 3px solid rgb(87, 31, 31);
+
+}

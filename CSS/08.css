@@ -1,0 +1,551 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.fondo{
+   width: 400px;
+   height: 500px;
+   border: 5px solid ;
+   border-radius: 10%;
+   background: pink ;
+   justify-content: center;
+   margin: auto;
+}
+
+.titulo{
+    text-align: center;
+}
+.cabeza{
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 100%;
+    margin: 30px auto;
+}
+.cuerpo{
+    width: 5px;
+    height: 220px;
+    background: black;
+    border-radius: 10px;
+    margin: -33px auto ;
+
+}
+.brazo1{
+width: 5px;
+height: 100px;
+background: black;
+border-radius: 10px;
+transform: rotate(-60deg);
+position: relative;
+top: -150px;
+left: 150px;
+}
+.brazo2{
+    width: 5px;
+    height: 100px;
+    background: black;
+    border-radius: 10px;
+    transform: rotate(60deg);
+    position: relative;
+    top: -250px;
+    left: 235px;
+    }
+    .pierna1{
+        width: 5px;
+        height: 100px;
+        background: black;
+        border-radius: 10px;
+        transform: rotate(30deg);
+        position: relative;
+        top: -186px;
+        left: 168px;
+    }
+    .pierna2{
+        width: 5px;
+        height: 100px;
+        background: black;
+        border-radius: 10px;
+        transform: rotate(-30deg);
+        position: relative;
+        top: -286px;
+        left: 217px;
+    }
+    .pie1{
+        width: 20px;
+        height: 5px;
+        background: black;
+        border-radius: 5px;
+        position: relative;
+        top: -297px;
+        left: 242px;
+    }
+    .pie2{
+        width: 20px;
+        height: 5px;
+        background: black;
+        border-radius: 5px;
+        position: relative;
+        top: -303px;
+        left: 129px;
+    }
+    .mano2{
+        width: 20px;
+        height: 5px;
+        background: black;
+        border-radius: 5px;
+        position: relative;
+        top: -122px;
+        left: 93px;
+    }
+    .mano1{
+        width: 20px;
+        height: 5px;
+        background: black;
+        border-radius: 5px;
+        position: relative;
+        top: -116px;
+        left: 278px;
+    }
+    .fondo2{
+        width: 300px;
+        height: 300px;
+        border: 5px solid ;
+        border-radius: 10%;
+        background: rgb(215, 132, 200) ;
+        justify-content: center;
+        margin: auto; 
+    }
+    .cara{
+        width: 150px;
+        height: 150px;
+        background: rgb(237, 253, 13);
+        border-radius: 100%;
+        margin: 30px auto;
+        border: 3px solid black;
+        left: 200px;
+    }
+    .ojo{
+        width: 20px;
+        height: 25px;
+        background: black;
+        border-radius: 100%;
+        border: 3px solid;
+        left: 155px;
+        top: -126px;
+        position: relative;
+    }
+    .oji{
+        width: 20px;
+        height: 25px;
+        background: black;
+        border-radius: 100%;
+        border: 3px solid;
+        left: 110px;
+        top: -150px;
+        position: relative;
+    }
+    .boca{
+        width: 60px;
+        height: 30px;
+        border-radius: 100%;
+        border: 3px solid;
+        left: 115px;
+        top: -130px;
+        position: relative;
+    }
+    .cua{
+        height: 20px;
+        width: 70px;
+        background: rgb(237, 253, 13);
+        position: relative;
+        left: 109px;
+        top: -166px;
+      
+    }
+    
+
+    .f3{
+        width: 300px;
+        height: 300px;
+        border: 5px solid ;
+        border-radius: 10%;
+        background: rgb(140, 193, 242) ;
+        justify-content: center;
+        margin: auto; 
+    }
+    .cara2{
+        width: 150px;
+        height: 150px;
+        background: rgb(237, 253, 13);
+        border-radius: 100%;
+        margin: 30px auto;
+        border: 3px solid black;
+        left: 200px;
+    }
+    .ojo2{
+        width: 20px;
+        height: 25px;
+        background: black;
+        border-radius: 100%;
+        border: 3px solid;
+        left: 155px;
+        top: -126px;
+        position: relative;
+    }
+    .oji2{
+        width: 20px;
+        height: 25px;
+        background: black;
+        border-radius: 100%;
+        border: 3px solid;
+        left: 110px;
+        top: -150px;
+        position: relative;
+    }
+    .boca2{
+        width: 60px;
+        height: 30px;
+        border-radius: 100%;
+        border: 3px solid;
+        left: 115px;
+        top: -130px;
+        position: relative;
+    }
+    .cua2{
+        height: 20px;
+        width: 70px;
+        background: rgb(237, 253, 13);
+        position: relative;
+        left: 111px;
+        top: -148px;
+    }
+    .c1{
+        width: 5px;
+        height: 15px;
+        position: relative;
+        left: 160px;
+        top: -245px;
+        background: black;
+        transform: rotate(50deg);
+    }
+    .c2{
+        width: 5px;
+        height: 15px;
+        position: relative;
+        left: 115px;
+        top: -260px;
+        background: black;
+        transform: rotate(-50deg);
+    }
+
+
+    .fondi{
+        width: 500px;
+        height: 500px;
+        border: 5px solid ;
+        background: rgb(77, 184, 216) ;
+        justify-content: center;
+        margin: auto;   
+    }
+    .pasto{
+        width: 489px;
+        height: 130px;
+        background: rgb(15, 143, 56) ;
+        position: relative;
+        top: 360px;
+    }
+    .casa{
+        width: 150px;
+        height: 150px;
+        background: orange;
+        position: relative;
+        top: 80px;
+        left: 50px;
+    }
+    .techo{
+        width:200px;
+        height: 15px;
+        background: rgb(184, 101, 0);
+        position: relative;
+        top: -70px;
+        left: 30px;
+    }
+    .puerta{
+        height: 65px;
+        width:50px;
+        position: relative;
+        background: brown;
+        left: 70px;
+
+    }
+    .ventana{
+        height: 20px;
+        width:20px;
+        position: relative;
+        border: 1px solid rgb(76, 42, 10);
+        left: 150px;
+        top: -110px;
+    }
+    .ventana2{
+        height: 20px;
+        width:20px;
+        position: relative;
+        border: 1px solid rgb(76, 42, 10);
+        left: 170px;
+        top: -110px;
+    }
+    .ventana3{
+        height: 20px;
+        width:20px;
+        position: relative;
+        border: 1px solid rgb(76, 42, 10);
+        left: 150px;
+        top: -130px;
+    }
+    .ventana4{
+        height: 20px;
+        width:20px;
+        position: relative;
+        border: 1px solid rgb(76, 42, 10);
+        left: 170px;
+        top: -170px;
+    }
+    .manija{
+        height: 10px;
+        width: 10px;
+        background: rgb(8, 0, 255);
+        position: relative;
+        border-radius: 50%;
+        left: 107px;
+        top: -110px;
+    }
+    .sol{
+        height: 70px;
+        width: 70px;
+        background: rgb(183, 204, 25);
+        position: relative;
+        border-radius: 100%;
+        right: -400px;
+        top: -400px;
+    }
+    .tronco{
+        width: 20px;
+        height: 80px;
+        background: rgb(92, 69, 15);
+        position: relative;
+        left: 300px;
+        top: -700px;
+    }
+    .a{
+        width: 100px;
+        height: 30px;
+        background: rgb(70, 137, 11);
+        position: relative;
+        border-radius: 50%;
+        left: 265px;
+        top: -800px;  
+
+    }
+    .r{
+        width: 80px;
+        height: 30px;
+        background: rgb(70, 137, 11);
+        position: relative;
+        border-radius: 50%;
+        left: 275px;
+        top: -850px;     
+
+    }
+    .b{
+        width: 60px;
+        height: 30px;
+        background: rgb(70, 137, 11);
+        position: relative;
+        border-radius: 50%;
+        left: 285px;
+        top: -900px; 
+           
+
+    }
+    .o{
+        width: 30px;
+        height: 20px;
+        background: rgb(70, 137, 11);
+        position: relative;
+        border-radius: 50%;
+        left: 300px;
+        top: -963px;   
+       
+    }
+    .l{
+        width: 40px;
+        height: 20px;
+        background: rgb(70, 137, 11);
+        position: relative;
+        border-radius: 50%;
+        left: 295px;
+        top: -965px;
+    }
+
+
+    .head{
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 100%;
+    margin: 30px auto;
+    position: relative;
+    left: 200px;
+    top: -250px;
+}
+.body{
+    width: 5px;
+    height: 50px;
+    background: black;
+    border-radius: 10px;
+    margin: -33px auto ;
+    position: relative;
+    left: 200px;
+    top: -250px;
+
+}
+.arm1{
+width: 5px;
+height: 20px;
+background: black;
+border-radius: 10px;
+transform: rotate(-60deg);
+position: relative;
+top: -275px;
+left: 839px;
+}
+.arm2{
+    width: 5px;
+    height: 20px;
+    background: black;
+    border-radius: 10px;
+    transform: rotate(60deg);
+    position: relative;
+    top: -295px;
+    left: 855px;
+    }
+    .kne1{
+        width: 5px;
+        height: 20px;
+        background: black;
+        border-radius: 10px;
+        transform: rotate(35deg);
+        position: relative;
+        top: -272px;
+        left: 840px;
+    }
+    .kne2{
+        width: 5px;
+        height: 20px;
+        background: black;
+        border-radius: 10px;
+        transform: rotate(-35deg);
+        position: relative;
+        top: -293px;
+        left: 850px;
+    }
+    .fee1{
+        width: 10px;
+        height: 5px;
+        background: black;
+        border-radius: 5px;
+        position: relative;
+        top: -298px;
+        left: 830px;
+    }
+    .fee2{
+        width: 10px;
+        height: 5px;
+        background: black;
+        border-radius: 5px;
+        position: relative;
+        top: -303px;
+        left: 855px;
+    }
+    .left{
+        width: 10px;
+        height: 5px;
+        background: black;
+        border-radius: 5px;
+        position: relative;
+        top: -261px;
+        left: 828px;
+    }
+    .rith{
+        width: 10px;
+        height: 5px;
+        background: black;
+        border-radius: 5px;
+        position: relative;
+        top: -267px;
+        left: 863px;
+    }
+    .nube{
+        width: 70px;
+        height: 70px;
+        background: white;
+        border-radius: 100%;
+        position: relative;
+        top: -450px;
+        left: 200px;
+    }
+    .nube2{
+        width: 70px;
+        height: 70px;
+        background: white;
+        border-radius: 100%;
+        position: relative;
+        top: -500px;
+        left: 150px;
+    }
+    .nube3{
+        width: 70px;
+        height: 70px;
+        background: white;
+        border-radius: 100%;
+        position: relative;
+        top: -570px;
+        left: 110px;
+    }
+    .nube4{
+        width: 70px;
+        height: 70px;
+        background: white;
+        border-radius: 100%;
+        position: relative;
+        top: -670px;
+        left: 155px;
+    }
+    .nube5{
+        width: 70px;
+        height: 70px;
+        background: white;
+        border-radius: 100%;
+        position: relative;
+        top: -750px;
+        left: 205px;
+    }
+    .nube6{
+        width: 70px;
+        height: 70px;
+        background: white;
+        border-radius: 100%;
+        position: relative;
+        top: -830px;
+        left: 100px;
+    }
+    .nube7{
+        width: 70px;
+        height: 70px;
+        background: white;
+        border-radius: 100%;
+        position: relative;
+        top: -930px;
+      left:155px;
+    }        

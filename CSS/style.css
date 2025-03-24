@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(26,6,150,1) 47%, rgba(0,246,255,1) 100%);
+
+}
+h1{
+        font-size: 36px;
+        color:white;
+        margin:50px;
+        font-family: "Arial Black"; 
+}
+a{
+text-decoration: none;
+display: block;
+padding: 15px;
+background: black;
+width: 200px;
+margin: 20px auto;
+font-family: "arial black";
+color: white;
+border-radius: 25px;
+border: 3px solid black;
+box-shadow: 0 0 5px rgba(0,0,0);
+}
