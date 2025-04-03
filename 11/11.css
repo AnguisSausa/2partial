@@ -1,0 +1,16 @@
+.destacado {
+    font-size: 1.5em;
+    font-weight: bold;
+    transform: scale(1.07); 
+}
+.destacado:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 10px black;
+    animation: billar 0.6 ease;
+    
+}
+@keyframes billar{
+    0% {box-shadow: 0 0 0px black;}
+    50% {box-shadow: 0 0 15px 5px black;}
+    100% {box-shadow: 0 0 10px 5px black;}
+}
