@@ -10,8 +10,7 @@ document.querySelector("#vdia").textContent=dia.value
 document.querySelector("#fecha").textContent=dia.value+" DE "+meses[mes.value-1];
 let s="";
 switch(parseInt(mes.value)){
-        case 1:
-        s=(dia.value<=19)?"capri.jpg":"aquario.jpg"; break;
+        case 1:s=(dia.value<=19)?"capri.jpg":"aquario.jpg"; break;
         case 2:s=(dia.value<=18)?"aquario.jpg":"pisis.jpg"; break;
         case 3: s=(dia.value<=20)?"pisis.jpg":"aries.jpg";break;
         case 4:s=(dia.value<=19)?"aries.jpg":"tauro.jpg"; break;

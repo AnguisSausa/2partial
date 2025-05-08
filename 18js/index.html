@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIZZAS</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="p-3 mb-2 bg-danger-subtle text-danger-emphasis">
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid text-center m-auto">
+    <a class="navbar-brand m-auto" href="../indexmenu.html">
+    <img src="../img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top m-auto ">
+            12.-CHESTER PIZZA
+    </a>
+    </div>
+    </nav>
+
+    <div class="container-fluid shadow p-3 mb-5 bg-body-tertiary rounded mt-3 w-75 m-auto text-center">
+        <div class="row">
+        <div class="col m-auto text-center">
+            <img src="coppel.jpeg">
+            <div class="form-control w-50 h-50 text-center m-auto">
+                <img src="super.jpeg" alt="" id="imgs" class="w-100 m-auto d-block">
+            </div>
+            <div class="form-control" id="desglose">
+               DESGLOSE
+            </div>
+        </div>
+        <div class="col">
+            <h1>ORDEN</h1>
+            <table class="w-100">
+                <tr>
+                    <td>
+                        <h4>ESPECIALIDAD</h4>
+                    </td>
+                    <td>
+                        <select name="" id="producto" class="form-control">
+                            <option value="1">TELEVICION SMART TV 70'</option>
+                            <option value="2">OPPO RENO 13 5G</option>
+                            <option value="3">LAPTOP LENOVO Legion 9i 16" 9na Gen</option>
+                            <option value="4">APP LE iPHONE 16 PRO</option>
+                            <option value="5">Tv LG 86' ULTRA HD 4K</option>
+                            <option value="6">REFRIGERADOR</option>
+                            <option value="7">ESTUFA</option>
+                            <option value="8">Restored LAPTOP HP</option>
+                            <option value="9">Microondas Samsung</option>
+                            <option value="10">Lavadora Whirlpool</option>
+                        </select>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="text-start">
+                        <h4>CANTIDAD</h4>
+                        <input type="range"  min="1" max="10" value="1" class="form-control" id="cantidad">
+                    </td>
+                    <td>
+                        <h2 id="vcantidad" class="text-start p-3">1</h2>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h1 style="font-size: 60px;font-weight: bold;" id="precio">PRECIO $0.00 MXN</h1>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>PLAZO</h4>
+                    </td>
+                    <td class="text-start">
+                       <p><input type="radio" name="plazo" id="p1" value="1.1" checked>6 MESES</p>
+                       <p><input type="radio" name="plazo" id="p2" value="1.12">12 MESES</p>
+                       <p><input type="radio" name="plazo" id="p3" value="1.15">18 MESES</p>
+                       <p><input type="radio" name="plazo" id="p4" value="1.18">24 MESES</p>
+                        
+                    </td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <h4>
+                            ENGANCHE
+                        </h4>
+                    </td>
+                    <td class="text-start">
+                        <p><input type="number" id="enganche"  min="0" value="0" max="100000" class="form-control">
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="3"> 
+                        <button class="btn btn-danger p-3" id="btnreset">RESET</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
