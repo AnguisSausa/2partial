@@ -61,15 +61,15 @@ const pizza=()=>{
     total.innerHTML="TOTAL $"+totalp.toFixed(2);
 }
 btnpagar.onclick=()=>{
-    let recibi=0;
-    let cambio=0;
+    let pago=0
+    let cambio=0
     do{
-        recibi=parseFloat(prompt("INTRODUCE MONTO"));
-        if(recibi<totalp){
+        pago=parseFloat(prompt("INTRODUCE MONTO: "));
+        if(pago<totalp){
             alert("MONTO INSUFICIENTE")
         }
-    }while(recibi<totalp);
-    cambio=recibi-totalp
-    alert("TU CAMBIO ES: "+cambio.toFixed(2))
-} 
-// termina la funcion flecha
+
+    }while(pago<totalp);
+    cambio=pago-totalp;
+    alert("TU CAMBIO ES "+cambio)
+}

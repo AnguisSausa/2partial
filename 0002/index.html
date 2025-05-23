@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJETOS</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-primary-subtle">
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid text-center m-auto">
+        <a class="navbar-brand m-auto" href="../indexmenu.html">
+        <img src="../img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top m-auto ">
+        TIENDA LAS COMADRES
+
+        </a>
+        </div>
+        </nav>
+
+    <div class="container-fluid shadow p-3 mb-5 bg-body-tertiary rounded mt-5 w-75 m-auto text-center">
+        <img src="Imagen de WhatsApp 2025-05-12 a las 11.27.15_1469b9e0.jpg" class="my-3 w-50 m-auto" alt="" height="250px">
+    <div><button class="btn btn-success my-3 float-end" data-bs-toggle="modal" data-bs-target="#modalAgregar"><i class="bi bi-person-plus-fill mx-3"></i>Agregar</button>
+    
+    </div>
+
+    <div class="modal fade" id="modalAgregar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-primary-subtle">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Producto</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-primary-subtle m-auto text-center w-100 bg-primary-subtle">
+                
+                    <label for="">CODIGO</label>
+                    <input type="text" id="codigo" class="form-control w-50 m-auto my-3" placeholder="CODIGO ">
+                    <label for="">NOMBRE</label>
+                    <input type="text" id="nombre" class="form-control w-50 m-auto my-3" placeholder="NOMBRE ">
+                    <label for="">PRECIO</label>
+                    <input type="text" id="precio" class="form-control w-50 m-auto my-3" placeholder="PRECIO ">
+                    <label for="">STOCK</label>
+                    <input type="text" id="stock" class="form-control w-50 m-auto my-3" placeholder="STOCK ">
+                    <label for="">PROVEDOR</label>
+                    <input type="text" id="provedor" class="form-control w-50 m-auto my-3" placeholder="PROVEDOR ">
+
+            </div>
+            <div class="modal-footer bg-primary-subtle">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-dark" id="btnadd">Guardar</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+         
+         <table class="table table-bordered my-5 " >
+            <tr>
+                <th>CODIGO</th>
+                <th>NOMBRE</th>
+                <th>PRECIO</th>
+                <th>STOCK</th>
+                <th>PROVEDOR</th>
+            </tr>
+            <tbody id="tablaA"></tbody>
+         </table>
+         <div class="row text-start">
+            <div class="col">
+                <h5>Producto mas caro</h5>
+                <h3 id="rcaro"></h3>
+                <h5 >Producto mas barato</h5>
+                <h3 id="rbarato"></h3>
+                <h5 >Cuantos productos son?</h5>
+                <h3 id="rproductos"></h3>
+                <h5>Total inventario </h5>
+                <h3 id="totalin"></h3>
+
+
+            </div>
+            <div class="col">
+                <h5 >Stock total</h5>
+                <h3 id="rtotal"></h3>
+                <h5 >Stock Max</h5>
+                <h3 id="rmax"></h3>
+                <h5>Stock Min</h5>
+                <h3 id="rmin"></h3>
+                
+
+
+            </div>
+         </div>
+         
+
+
+         
+    </div>
+
+
+    <div class="modal fade " id="modaledit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-warning-subtle">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">EDITAR REGISTRO</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-warning-subtle m-auto text-center w-100 bg-warning-subtle">
+                
+                     <label for="">CODIGO</label>
+                    <input type="text" id="ecodigo" class="form-control w-50 m-auto my-3" placeholder="CODIGO ">
+                    <label for="">NOMBRE</label>
+                    <input type="text" id="enombre" class="form-control w-50 m-auto my-3" placeholder="NOMBRE ">
+                    <label for="">PRECIO</label>
+                    <input type="text" id="eprecio" class="form-control w-50 m-auto my-3" placeholder="PRECIO ">
+                    <label for="">STOCK</label>
+                    <input type="text" id="estock" class="form-control w-50 m-auto my-3" placeholder="STOCK ">
+                    <label for="">PROVEDOR</label>
+                    <input type="text" id="eprovedor" class="form-control w-50 m-auto my-3" placeholder="PROVEDOR ">
+                     <input type="hidden" id="index">
+
+            </di>
+            <div class="modal-footer bg-warning-subtle">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-dark" onclick="guardar()">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <script src="../js/bootstrap.bundle.js"></script>
+        <script src="sweetalert2.all.min.js"></script>  
+        <script src="app.js"></script>
+</body>
+</html>
