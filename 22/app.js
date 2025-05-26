@@ -2,6 +2,42 @@ var arraycategorias=JSON.parse(localStorage.getItem("categorias"))||[]
 var arrayProductos=JSON.parse(localStorage.getItem("productos"))||[] 
 var categoriasHTMl=``
 var btnCategorias=``
+const filtarProductos=(categoria="Todos", texto="")=>{
+  let listaProductos = document.getElementById("listaProductos");
+  let listaHTML = ``;
+  let arrayProductos = JSON.parse(localStorage.getItem("productos")) || [];
+  //filtrar por categoria
+  let productosFiltrados = arrayProductos.filter(p => {
+    return (p.categoria == categoria || categoria == "Todos");
+  });
+  
+  //filtrar por campo busquedad
+  if (texto) {
+    productosFiltrados = productosFiltrados.filter(p => {
+      const nombreMatch = p.nombre.toLowerCase().includes(texto.toLowerCase());
+     // const categoriaMatch = arraycategorias[parseInt(p.categoria)-1].categoria.toLowerCase().includes(texto.toLowerCase());
+      return nombreMatch;
+    });
+  }
+  //imprime lista de resultado
+  productosFiltrados.forEach(p => {
+    listaHTML += `
+    <li class="list-group-item list-group-item-action d-flex justify-content-end align-items-start shadow my-1 rounded-2">
+      <div class="ms-2 me-auto text-start">
+        <div class="fw-bold">${p.nombre}</div>${arraycategorias[parseInt(p.categoria)-1].categoria}
+      </div>
+      <span class="btn  btn-dark py-2 rounded-pill mx-3 fw-bold "><i class="bi bi-cash mx-2"></i>$ ${parseFloat(p.precio).toFixed(2)}</span>
+      <span class="btn  rounded-pill fw-bold px-2 ${parseInt(p.stock) >= parseInt(p.stockmin) ? 'btn-success' : 'btn-danger'}"> 
+      ${parseInt(p.stock) >= parseInt(p.stockmin) ? '<i class="bi bi-arrow-up mr-2"></i>' : '<i class="bi bi-arrow-down ml-5"></i>'}${p.stock}</span>
+    </li>
+    `;
+  });
+  
+  listaProductos.innerHTML = listaHTML;
+
+}
+
+
 
  const agregarCategoria=()=>{
     let cat=document.getElementById("categoria").value
@@ -22,25 +58,29 @@ const actualizarTablaCategoria=()=>{
   let tablacategorias=document.getElementById("tablaCategorias")
   let tablaHTML=``
   let index=0
+  
   arraycategorias=JSON.parse(localStorage.getItem("categorias"))||[]
   categoriasHTML=`<option value="0">Elige Categoria</option>`
-  btnCategorias=`<div class="col"><button class="btn btn-dark" onclick="filtarProductos('Todos')">Todos</button></div>`
+  btnCategorias=`<div class="col"><button class="btn btn-outline-secondary m-auto " onclick="filtarProductos('Todos')">Todos</button></div>`
   arraycategorias.map(p=>{
     tablaHTML+=`
         <tr>
           <td>${p.categoria}</td>
-          <td><button class="btn btn-danger" onclick="eliminarCategoria(${index})"><i class="bi bi-trash"></i></button></td>
-          <td><button class="btn btn-warning" onclick="editarCategoria(${index})" data-bs-toggle="modal" data-bs-target="#editCategoriaModal"><i class="bi bi-pencil"></i></button></td>
+          <td><button class="btn btn-danger btn-lg m-auto " onclick="eliminarCategoria(${index})"><i class="bi bi-trash"></i></button></td>
+          <td><button class="btn btn-warning btn-lg m-auto " onclick="editarCategoria(${index})" data-bs-toggle="modal" data-bs-target="#editCategoriaModal"><i class="bi bi-pencil"></i></button></td>
         </tr>
     `
     index++
     categoriasHTML+=`<option value="${index}">${p.categoria}</option>`
-    btnCategorias+=`<div class="col"><button class="btn btn-dark" onclick="filtarProductos('${index}')">${p.categoria}</button></div>` 
-  });    
+    btnCategorias+=`<div class="col"><button class="btn btn btn-outline-secondary" onclick="filtarProductos('${index}')">${p.categoria}</button></div>` 
+  });   
+  
+  
   tablacategorias.innerHTML=tablaHTML 
   document.getElementById("pcategoria").innerHTML=categoriasHTML
   document.getElementById("epcategoria").innerHTML=categoriasHTML
   document.getElementById("btnCategorias").innerHTML=btnCategorias
+  filtarProductos()
 }
 
 const editarCategoria=(index)=>{
@@ -54,10 +94,13 @@ const guardarCategoria=()=>{
   let cat=document.getElementById("ecategoria").value
   let index=document.getElementById("index").value
  
+
   if(cat.trim()===''){
     Swal.fire({icon: "success",title: "Oops...",text: "Campos vacios!!"});
     return;
     }
+
+
   let categoria={categoria:cat}
   arraycategorias[index]=categoria
   localStorage.setItem("categorias",JSON.stringify(arraycategorias))
@@ -146,6 +189,8 @@ const actualizarTablaProducto=()=>{
           </td>
         </tr>
     `
+
+
     index++
      
   });    
@@ -169,6 +214,8 @@ const missweet = Swal.mixin({
     },
     buttonsStyling: false
   });
+
+
   missweet.fire({
     title: "Estas seguro de Eliminar este Producto??",
     showDenyButton: true,
@@ -215,25 +262,5 @@ const guardarProducto=()=>{
   cerrarModal("editProductoModal")
   
 }
-const filtarProductos=(categoria="Todos")=>{
-  let listaProductos=document.getElementById("listaProductos")
-  let listaHTML=``
-  let index=0
-  arrayProductos=JSON.parse(localStorage.getItem("productos"))||[]
-  arrayProductos.map(p=>{
-    if(p.categoria==categoria || categoria=="Todos"){
-    listaHTML+=`
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div class="ms-2 me-auto">
-              <div class="fw-bold">${p.nombre}</div>
-              ${arraycategorias[parseInt(p.categoria)-1].categoria}
-          </div>
-            <span class="badge text-bg-primary rounded-pill">${p.stock}</span>
-        </li>
-    `
-    index++
-    }
-  });    
-  listaProductos.innerHTML=listaHTML 
-}
+
 filtarProductos();

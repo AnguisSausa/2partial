@@ -23,13 +23,13 @@
         <!--ESTAS SON LAS TABS O PESTAÑAS-->
         <ul class="nav nav-tabs nav-justified" role="tablist">
             <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="justified-tab-0" data-bs-toggle="tab" href="#justified-tabpanel-0" role="tab" aria-controls="justified-tabpanel-0" aria-selected="true"> CATALOGO </a>
+                <a class="nav-link active text-dark bg-info bg-opacity-50 icon-link-hover" id="justified-tab-0" data-bs-toggle="tab" href="#justified-tabpanel-0" role="tab" aria-controls="justified-tabpanel-0" aria-selected="true"> CATALOGO </a>
             </li>
             <li class="nav-item" role="presentation">
-                <a class="nav-link" id="justified-tab-1" data-bs-toggle="tab" href="#justified-tabpanel-1" role="tab" aria-controls="justified-tabpanel-1" aria-selected="false">GESTION PRODUCTOS</a>
+                <a class="nav-link bg-warning bg-opacity-50 text-dark icon-link-hover" id="justified-tab-1" data-bs-toggle="tab" href="#justified-tabpanel-1" role="tab" aria-controls="justified-tabpanel-1" aria-selected="false">GESTION PRODUCTOS</a>
             </li>
             <li class="nav-item" role="presentation">
-                <a class="nav-link" id="justified-tab-2" data-bs-toggle="tab" href="#justified-tabpanel-2" role="tab" aria-controls="justified-tabpanel-2" aria-selected="false">GESTION CATEGORIAS </a>
+                <a class="nav-link bg-success bg-opacity-50 text-dark icon-link-hover" id="justified-tab-2" data-bs-toggle="tab" href="#justified-tabpanel-2" role="tab" aria-controls="justified-tabpanel-2" aria-selected="false">GESTION CATEGORIAS </a>
             </li>
         </ul>
         <!--AQUI ACABAN LAS TABS O PESTAÑAS-->
@@ -40,7 +40,7 @@
              <!--CATALOGO-->
             <div class="tab-pane active text-center" id="justified-tabpanel-0" role="tabpanel" aria-labelledby="justified-tab-0">
                  <h1>Menu</h1>
-                    <input type="search" class="form-control w-5 m-auto" placeholder="Buscar">
+                    <input type="search" class="form-control w-5 m-auto" placeholder="Buscar" onkeyup="filtarProductos('Todos',this.value)">
                     <div class="row mt-3" id="btnCategorias">
                        
 
@@ -58,7 +58,7 @@
              <h1>CRUD DE PRODUCTOS</h1>
 
 
-                <button type="button" class="btn btn-primary float-end my-3" data-bs-toggle="modal" data-bs-target="#addProductoModal">
+                <button type="button" class="btn btn-success float-end my-3" data-bs-toggle="modal" data-bs-target="#addProductoModal">
                     <i class="bi bi-person-plus mx-2"></i>Agregar Producto
                 </button>
 
@@ -146,8 +146,8 @@
                 
                 
                 
-                <table class="table table-bordered" >
-                    <tr>
+                <table class="table table-hover table-striped-columns table-bordered" >
+                    <tr class="table-info">
                     <th>NOMBRE</th>
                     <th>CATEGORIA</th>
                     <th>STOCK</th>
@@ -172,7 +172,7 @@
             <div class="tab-pane text-center" id="justified-tabpanel-2" role="tabpanel" aria-labelledby="justified-tab-2">
                 <h1>CRUD DE CATEGORIAS</h1>
 
-                 <button type="button" class="btn btn-primary float-end my-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                 <button type="button" class="btn btn-success float-end my-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <i class="bi bi-person-plus mx-2"></i>Agregar Categoria
                 </button>
 
@@ -239,8 +239,8 @@
                 
                 
                 
-                <table class="table table-bordered" >
-                    <tr>
+                <table class="table table-hover table-borderless" >
+                    <tr class="table-warning">
                     <th>CATEGORIA</th>
                     <th>ELIMINAR</th>
                     <th>EDITAR</th>
